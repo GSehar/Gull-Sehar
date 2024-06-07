@@ -1,0 +1,66 @@
+/* Import main styles */
+@import url('main.css');
+
+/* Additional styles for about page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;  /* Center text in the body */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#about {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px; /* Adds space between header and content */
+}
+
+#about p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#about strong {
+    display: inline-block;
+    width: 150px;
+}

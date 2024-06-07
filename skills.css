@@ -1,0 +1,129 @@
+/* Import main styles */
+@import url('main.css');
+
+/* Additional styles for skills page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center; /* Center text in the body */
+    background: url('../images/background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#skills {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px; /* Adds space between header and content */
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center; /* Center text in skill list */
+}
+
+.skill-list li {
+    margin: 0 10px;
+}
+
+.skill-list li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.skill-icons p {
+    display: none; /* Initially hide all summaries */
+    margin: 20px 0;
+    line-height: 1.6;
+    color: white;
+}
+
+.skill-icons p span {
+    color: #FFD700; /* Gold color for skill titles */
+    font-weight: bold;
+}
+
+.skill-icons p.active {
+    display: block; /* Show the active summary */
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animated-section span {
+    display: inline-block;
+    animation: textAnimation 1s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+
+
+.skill-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-icons li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.skill-icons img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}

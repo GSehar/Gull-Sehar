@@ -1,0 +1,23 @@
+@import url('main.css');
+
+/* Additional styles for contact page */
+#contact {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px; /* Adds space between header and content */
+}
+
+#contact p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#contact strong {
+    display: inline-block;
+    width: 150px;
+}
